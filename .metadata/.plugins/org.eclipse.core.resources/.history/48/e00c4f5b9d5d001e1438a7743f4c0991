@@ -1,0 +1,47 @@
+package models;
+
+public class Usuario {
+	private int idusuario;
+	private String nomrbe;
+	private String apellido;
+	private String ciudad;
+	
+	public int getIdusuario() {
+		return idusuario;
+	}
+	public void setIdusuario(int idusuario) {
+		this.idusuario = idusuario;
+	}
+	public String getNomrbe() {
+		return nomrbe;
+	}
+	public void setNomrbe(String nomrbe) {
+		this.nomrbe = nomrbe;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public String getCiudad() {
+		return ciudad;
+	}
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
+	}
+	@Override
+	public String toString() {
+		return "Usuario [idusuario=" + idusuario + ", nomrbe=" + nomrbe + ", apellido=" + apellido + ", ciudad="
+				+ ciudad + "]";
+	}
+	public Usuario(String nomrbe, String apellido, String ciudad) {
+		
+		this.nomrbe = nomrbe;
+		this.apellido = apellido;
+		this.ciudad = ciudad;
+	}
+	
+	
+	
+}
